@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTutor - Learn C Programming</title>
+  <meta name="description" content="A precise, no-nonsense tutorial for learning C programming from scratch. 20 lessons covering everything from Hello World to dynamic memory and recursion." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="overlay"></div>
+
+  <!-- Mobile header -->
+  <header id="mobile-header">
+    <div class="mobile-logo" onclick="navigate('/')">
+      <span>&gt;_</span>
+      <span>CTutor</span>
+    </div>
+    <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </header>
+
+  <div id="app">
+    <!-- Sidebar (rendered by JS) -->
+    <aside id="sidebar"></aside>
+
+    <!-- Main content -->
+    <main id="main">
+      <div id="content"></div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
